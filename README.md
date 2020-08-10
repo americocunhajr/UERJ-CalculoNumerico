@@ -1,4 +1,4 @@
-# Métodos Numéricos e Computacionais
+# Cálculo Numérico
 
 
 
