@@ -1,15 +1,9 @@
 # Cálculo Numérico - UERJ
 
-
-
-## Octave
-
-
-
 ## Professor:
 - Americo Cunha (UERJ) - www.americocunha.org
 
-## Como citar esse material?
+## Octave
 
 
 ## Licença
