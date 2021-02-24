@@ -6,8 +6,10 @@ Esse repositório armazena o material do curso de Cálculo Numérico da Universi
 
 Os monitores a seguir ajudaram a montar, corrigir e melhorar o material desse repositório. A eles meus sinseros agradecimentos.
 
+* Carla Cristina Passos Cruz
 * Julio Cesar de Castro Basilio
 * Marcos Vinicius do Santos Issa
+* Sara Cristina Quintanilha Valente
 * Victor Vieira Maudonet
 
 ## Licença
