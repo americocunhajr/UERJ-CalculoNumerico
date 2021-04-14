@@ -1,4 +1,4 @@
-clcclearn = 5; 
+clcclearn = 15; 
 
 A = triu(ones(n,n)); 
 b = A*ones(n,1);
