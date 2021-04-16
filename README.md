@@ -11,8 +11,9 @@ Os monitores a seguir ajudaram a montar, corrigir e melhorar o material desse re
 * Sara Cristina Quintanilha Valente
 * Victor Vieira Maudonet
 
-Além desses, alunos de diferentes turmas também apontaram pequenos erros de digitação. A tod@s meus sinseros agradecimentos!
+Além desses, alunos de diferentes turmas também apontaram pequenos erros de digitação. 
 
+A tod@s meus sinseros agradecimentos!
 
 ## Licença
 
