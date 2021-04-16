@@ -4,13 +4,15 @@ Esse repositório armazena o material do curso de Cálculo Numérico da Universi
 
 ## Agradecimentos
 
-Os monitores a seguir ajudaram a montar, corrigir e melhorar o material desse repositório. A eles meus sinseros agradecimentos.
-
+Os monitores a seguir ajudaram a montar, corrigir e melhorar o material desse repositório: 
 * Carla Cristina Passos Cruz
 * Julio Cesar de Castro Basilio
 * Marcos Vinicius do Santos Issa
 * Sara Cristina Quintanilha Valente
 * Victor Vieira Maudonet
+
+Além desses, alunos de diferentes turmas também apontaram pequenos erros de digitação. A tod@s meus sinseros agradecimentos!
+
 
 ## Licença
 
