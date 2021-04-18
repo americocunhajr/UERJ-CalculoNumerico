@@ -10,5 +10,4 @@ function x = cramer(A,b)
         Aj(:,j) = b;
         x(j)    = myDet(Aj)/detA;
     end
-    disp(x)
 end
