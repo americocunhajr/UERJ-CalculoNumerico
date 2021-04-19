@@ -1,1 +1,1 @@
-clcclearA = [1 2 3 4; 2 1 4 3; 3 2 1 4; 4 3 2 1]b = A*ones(4,1)[x,A,b] = gauss(A,b)
+clcclearA = [1 2 3 4; 2 1 4 3; 3 2 1 4; 4 3 2 1]b = [10; 10; 10; 10][x,A,b] = gauss(A,b)
