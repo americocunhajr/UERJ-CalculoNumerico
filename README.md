@@ -2,6 +2,11 @@
 
 Esse repositório armazena o material do curso de **Cálculo Numérico** da *Universidade do Estado do Rio de Janeiro - UERJ*, ministrado pelo Prof. Americo Cunha (www.americocunha.org). Estão disponíveis os slides das aulas teóricas e os scrips utilizados nas atividades práticas de computação científica, sendo esses implementados no ambiente GNU Octave (https://www.gnu.org/software/octave)
 
+As vídeo aulas desse curso estão disponíveis no YouTube:
+
+https://youtube.com/playlist?list=PLjNDdMKtfqVlNZ70TlRSIx-nm8NploBYT
+
+
 ## Agradecimentos
 
 Os monitores a seguir ajudaram a montar, corrigir e melhorar o material desse repositório: 
