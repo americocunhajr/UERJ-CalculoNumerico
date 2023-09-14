@@ -50,44 +50,54 @@ root3 = fixedpoint(g3,x0,tol,maxiter);
 
 **fixedpoint_plot.m**
 ```
-function [xm,iter] = bisection_plot(f,a,b,tol,xmin,xmax,ymin,ymax,N)
+function xn = fixedpoint_plot(g,x0,tol,maxiter,xmin,xmax,ymin,ymax,N)
+    
+    xmesh = linspace(xmin,xmax,N);
+      idx = 0;
+    
+    figure()
+    plot([xmin xmax],[0 0],'k',[0 0],[ymin ymax],'k','linewidth',3);
+    hold on
+    plot(xmesh,xmesh   ,'g','linewidth',3);
+    plot(xmesh,g(xmesh),'b','linewidth',3);
+    saveas(gcf,['fixedpoint_plot',num2str(idx),'.png'])
+    idx = idx + 1;
+    
+    pause(1)
+    plot(x0,0,'om','MarkerSize',12);
+    saveas(gcf,['fixedpoint_plot',num2str(idx),'.png'])
+    idx = idx + 1;
+    
+    pause(1)
+    plot([x0 x0],[0 g(x0)],'r--','linewidth',2);
+    plot(x0,g(x0)         ,'om' ,'MarkerSize',12);
+    saveas(gcf,['fixedpoint_plot',num2str(idx),'.png'])
+    idx = idx + 1;
+    
      iter = 0;
     Error = inf;
-       xm = 0.5*(a+b);
-    xmesh = linspace(xmin,xmax,N);
-    idx = 0;
-    
-    while Error > tol  
-      figure(1)
-      hax = axes;
-      hold on
-      plot([xmin xmax],[0 0],'k',[0 0],[ymin ymax],'k','linewidth',3);
-      plot(xmesh,f(xmesh),'b','linewidth',3);
-      saveas(gcf,['bisection_plot',num2str(idx),'.png'])
-      idx = idx + 1;
-      pause(1)
-      line([a a],get(hax,'YLim'),'Color','r','linewidth',1,'LineStyle','--')
-      line([b b],get(hax,'YLim'),'Color','r','linewidth',1,'LineStyle','--')
-      plot(a,0,'om','MarkerSize',12);
-      plot(b,0,'om','MarkerSize',12);
-      saveas(gcf,['bisection_plot',num2str(idx),'.png'])
-      idx = idx + 1;
-      pause(1)
-      line([xm xm],get(hax,'YLim'),'Color','g','linewidth',2)
-      saveas(gcf,['bisection_plot',num2str(idx),'.png'])
-      idx = idx + 1;
-      hold off
+    while Error > tol && iter < maxiter
         
-      if f(a)*f(xm) < 0
-         b = xm;
-      else
-         a = xm;
-      end
-      x0 = xm;
-      xm = 0.5*(a+b);
-      Error = abs(xm-x0);
-      iter = iter + 1;
-      pause(0.5)
+        iter = iter + 1;
+          xn = g(x0);
+        
+        pause(1)
+        plot([x0 xn],[g(x0) xn],'r--','linewidth',2);
+        plot(xn,xn,'om','MarkerSize',12);
+        saveas(gcf,['fixedpoint_plot',num2str(idx),'.png'])
+        idx = idx + 1;
+        
+        pause(1)
+        plot([xn xn],[xn g(xn)],'r--','linewidth',2);
+        plot(xn,g(xn),'om','MarkerSize',12);
+        saveas(gcf,['fixedpoint_plot',num2str(idx),'.png'])
+        idx = idx + 1;
+        
+        Error = abs(xn-x0);
+        x0 = xn;
+    end
+    if Error > tol
+        xn = NaN;
     end
 end
 ```
@@ -96,11 +106,10 @@ end
 ```
 clc; clear; close all;
 
-a = 0.0; b = 20.0; tol = 1.0e-1;
-f = @(x) x.^3-30*x.^2+2552;
-
-xmin = 0.0; xmax = 30.0; ymin = -1500; ymax =  3000;
+g = @(x) exp(-x);
+x0 = 0.5; tol=1.0e-1; maxiter = 5;
+xmin = 0.0; xmax = 1.0; ymin = 0.0; ymax = 1.0;
 N = 1000;
 
-bisection_plot(f,a,b,tol,xmin,xmax,ymin,ymax,N)
+fixedpoint_plot(g,x0,tol,maxiter,xmin,xmax,ymin,ymax,N)
 ```
