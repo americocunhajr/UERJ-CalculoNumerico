@@ -169,7 +169,7 @@ function [xn,iter] = newton_plot(f,df,x0,tol,maxiter,xmin,xmax,ymin,ymax,N)
 end
 ```
 
-**MainBisectionPlot.m**
+**MainNewtonPlot.m**
 ```
 clc; clear; close all;
 
