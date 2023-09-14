@@ -3,7 +3,7 @@
 **newton.m**
 ```
 function [xn,iter] = newton(f,df,x0,tol,maxiter)
-	  iter  = 0;
+    iter  = 0;
     Error = inf;
     while Error > tol && iter < maxiter
          iter = iter + 1;
