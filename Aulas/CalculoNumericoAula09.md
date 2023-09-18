@@ -27,7 +27,7 @@ end
 ```
 clc; clear;
 
-a = 0.0; b = 2.0; tol = 1.0e-3;
+a = 0.0; b = 2.0; tol = 1.0e-9;
 f = @(x) x^2-2;
 root = bisection(f,a,b,tol);
 ```
@@ -36,7 +36,7 @@ root = bisection(f,a,b,tol);
 ```
 clc; clear;
 
-a = 21.0; b = 29.0; tol = 1.0e-9;
+a = 0.0; b = 20.0; tol = 1.0e-9;
 f = @(x)x.^3-30*x.^2+2552;
 root = bisection(f,a,b,tol);
 ```
