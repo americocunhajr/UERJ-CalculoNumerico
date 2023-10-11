@@ -1,6 +1,6 @@
 ## Cálculo Numérico (Aula 20) - Interpolação Polinomial
 
-**MainInterpExamples1.m**
+**MainInterpExample1.m**
 ```
 clc; clear; close all;
 
@@ -29,7 +29,7 @@ legend('dados','f(x)','p1(x)','p2(x)');
 xlim([0 10]); ylim([0 0.5]);
 ```
 
-**MainInterpExamples2.m**
+**MainInterpExample2.m**
 ```
 clc; clear; close all;
 
@@ -70,7 +70,7 @@ plot([beta_ast(2) beta_ast(2)],[40 160],'--k');
 hold off
 ```
 
-**MainInterpExamples3.m**
+**MainInterpExample3.m**
 ```
 clc; clear; close all;
 
@@ -114,7 +114,7 @@ function y = InterpLagrange(xd,yd,x)
 end
 ```
 
-**MainInterpExamples3Rev.m**
+**MainInterpExample3Rev.m**
 ```
 clc; clear; close all
 
@@ -127,7 +127,7 @@ yg = InterpLagrange(xd,yd,xg);
 plot(xg,yg,'b',xd,yd,'or');
 ```
 
-**MainInterpExamples4.m**
+**MainInterpExample4.m**
 ```
 clc; clear; close all;
 
@@ -194,7 +194,7 @@ function [coef,tab] = DivDifAdd(xd,yd,tab)
 end
 ```
 
-**MainInterpExamples4Rev.m**
+**MainInterpExample4Rev.m**
 ```
 clc; clear; close all;
 
