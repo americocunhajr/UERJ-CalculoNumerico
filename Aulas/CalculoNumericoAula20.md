@@ -163,7 +163,53 @@ function y = InterpNewton(x,xd,coef)
 end
 ```
 
-**MainInterpExamples5.m**
+**DivDif.m**
+```
+function [coef,tab] = DivDif(xd,yd)
+   n = length(xd)-1;
+   tab = zeros(n+1,n+1); 
+   xd = shiftdim(xd); 
+   yd = shiftdim(yd);
+   tab(1:n+1,1) = yd;
+   for k = 2:n+1
+      num = tab(k:n+1,k-1)-tab(k-1:n,k-1);
+      den = xd(k:n+1)-xd(1:n+1-k+1);
+      tab(k:n+1,k) = num./den;
+   end
+   coef = diag(tab);
+end
 ```
 
+**DivDifAdd.m**
+```
+function [coef,tab] = DivDifAdd(xd,yd,tab)
+   n = length(xd)-1;
+   tab = [tab zeros(n,1); yd(n+1) zeros(1,n)];
+   for k=2:n+1
+      num = tab(n+1,k-1)-tab(n,k-1);
+      den = xd(n+1)-xd(n+1-k+1);
+      tab(n+1,k) = num/den;
+   end
+   coef = diag(tab);
+end
+```
+
+**MainInterpExamples4Rev.m**
+```
+clc; clear; close all;
+
+xd1 = [1; 2; 4];    yd1 = [1; 3; 3];
+xd2 = [1; 2; 4; 5]; yd2 = [1; 3; 3; 2];
+
+[c1,tab1] = DivDif(xd1,yd1);
+[c2,tab2] = DivDifAdd(xd2,yd2,tab1);
+
+xg = 0:0.01:5;
+yg1 = InterpNewton(xg,xd1,c1);
+yg2 = InterpNewton(xg,xd2,c2);
+
+plot(xg,yg1,'b');
+hold on
+plot(xg,yg2,'g',xd2,yd2,'or');
+hold off
 ```
