@@ -44,7 +44,9 @@ xg = 0:0.01:5;
 yg = p(xg);
 
 plot(xd,yd,'om','LineWidth',2);
+hold on;
 plot(xg,yg,'-b','LineWidth',2);
+hold off;
 xlabel('x'); ylabel('y'); 
 set(gca,'FontSize',18);
 legend('dados','p(x)','Location','south');
