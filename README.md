@@ -14,6 +14,7 @@ https://youtube.com/playlist?list=PLjNDdMKtfqVnLUAR7DhuEYaf7ls0dRwwn
 
 Os monitores a seguir ajudaram a montar, corrigir e melhorar o material desse repositório: 
 * Carla Cristina Passos Cruz
+* Haroldo Costa Silva Filho
 * Julio Cesar de Castro Basilio
 * Marcos Vinicius do Santos Issa
 * Sara Cristina Quintanilha Valente
