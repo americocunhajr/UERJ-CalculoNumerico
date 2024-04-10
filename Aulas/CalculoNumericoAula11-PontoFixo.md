@@ -1,4 +1,4 @@
-## Cálculo Numérico (Aula 10) - Iteração de Ponto Fixo
+## Cálculo Numérico (Aula 11) - Iteração de Ponto Fixo
 
 **fixedpoint.m**
 ```
