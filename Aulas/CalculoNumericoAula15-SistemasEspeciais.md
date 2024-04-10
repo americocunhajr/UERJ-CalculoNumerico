@@ -1,4 +1,4 @@
-## Cálculo Numérico (Aula 13) - Alguns sistemas lineares especiais
+## Cálculo Numérico (Aula 15) - Alguns sistemas lineares especiais
 
 **backwardsub.m**
 ```
