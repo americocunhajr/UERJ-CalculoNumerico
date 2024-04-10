@@ -1,4 +1,4 @@
-## Cálculo Numérico (Aula 11) - Método de Newton
+## Cálculo Numérico (Aula 12) - Método de Newton
 
 **newton.m**
 ```
