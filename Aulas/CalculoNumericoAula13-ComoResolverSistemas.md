@@ -1,4 +1,4 @@
-## Cálculo Numérico (Aula 12) - Como resolver sistemas lineares?
+## Cálculo Numérico (Aula 13) - Como resolver sistemas lineares?
 
 **cramer.m**
 ```
