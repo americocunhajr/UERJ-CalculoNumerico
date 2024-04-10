@@ -1,4 +1,4 @@
-## Cálculo Numérico (Aula 20) - Interpolação Polinomial
+## Cálculo Numérico (Aula 22) - Interpolação Polinomial
 
 **MainInterpExample1.m**
 ```
