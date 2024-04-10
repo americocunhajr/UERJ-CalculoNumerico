@@ -1,4 +1,4 @@
-## Cálculo Numérico (Aula 14) - Eliminação gaussiana
+## Cálculo Numérico (Aula 16) - Eliminação gaussiana
 
 **backwardsub.m**
 ```
