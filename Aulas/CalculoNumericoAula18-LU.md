@@ -1,4 +1,4 @@
-## Cálculo Numérico (Aula 16) - Decomposição LU
+## Cálculo Numérico (Aula 18) - Decomposição LU
 
 **MainLU_Example1.m**
 ```
