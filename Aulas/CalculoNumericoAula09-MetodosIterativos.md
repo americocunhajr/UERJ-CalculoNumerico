@@ -1,4 +1,4 @@
-## Cálculo Numérico (Aula 08) - Métodos Iterativos para Equações Escalares
+## Cálculo Numérico (Aula 09) - Métodos Iterativos para Equações Escalares
 
 **MainIterativeMethod.m**
 ```
