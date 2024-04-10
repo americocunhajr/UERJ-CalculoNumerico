@@ -1,4 +1,4 @@
-## Cálculo Numérico (Aula 15) - Eliminação gaussiana com pivotamento
+## Cálculo Numérico (Aula 17) - Eliminação gaussiana com pivotamento
 
 **backwardsub.m**
 ```
