@@ -1,4 +1,4 @@
-## Cálculo Numérico (Aula 18) - Ajuste de Curvas
+## Cálculo Numérico (Aula 20) - Ajuste de Curvas
 
 **MainRegressionExample1.m**
 ```
