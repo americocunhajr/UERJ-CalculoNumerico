@@ -1,4 +1,4 @@
-## Cálculo Numérico (Aula 09) - Método da Bisseção
+## Cálculo Numérico (Aula 10) - Método da Bisseção
 
 **bisection.m**
 ```
