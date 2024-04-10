@@ -1,4 +1,4 @@
-## Cálculo Numérico (Aula 22) - Integração Numérica
+## Cálculo Numérico (Aula 24) - Integração Numérica
 
 **MainQuadExample1.m**
 ```
