@@ -1,4 +1,4 @@
-## Cálculo Numérico (Aula 17) - Decomposição Cholesky e outras fatorações matriciais
+## Cálculo Numérico (Aula 19) - Decomposição Cholesky e outras fatorações matriciais
 
 **Main_Cholesky.m**
 ```
